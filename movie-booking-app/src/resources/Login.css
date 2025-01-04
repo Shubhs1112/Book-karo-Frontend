@@ -1,0 +1,81 @@
+/* Login.css */
+
+/* General Styles for the Login Container */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Same background as Register */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-header {
+    margin-bottom: 20px;
+    color: #333; /* Same color as Register */
+}
+
+/* Styling for the Form */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Same color as Register */
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Same background as Register */
+}
+
+.login-checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; /* Same color as Register button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #20567a; /* Same hover effect as Register */
+}
+
+/* Error Message */
+.login-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
