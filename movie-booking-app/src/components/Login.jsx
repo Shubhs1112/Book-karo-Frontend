@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; 
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/authSlice';
+import '../components/admin/AdminLandingPage'
 import '../resources/Login.css'; 
 
 const Login = () => {
@@ -34,9 +35,12 @@ const Login = () => {
                 const data = await response.json();
                 setMessage(data.message); // Display success message
                 // Handle successful login
-                let user = data.username;
-                dispatch(login(user));
-                navigate('/');
+                let user = data;
+                dispatch(login(user.username));
+
+                if(user.role === 'Customer') navigate('/');
+                else navigate('/admin');
+
             } else {
                 const errorData = await response.json(); // Parse error JSON
                 setMessage(errorData.error || 'Login failed');

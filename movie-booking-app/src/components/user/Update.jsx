@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import '../resources/Register.css'; // Ensure the same CSS file is imported
+import '../../resources/Register.css';
 
 const UpdateProfile = () => {
     const [username, setUsername] = useState('');

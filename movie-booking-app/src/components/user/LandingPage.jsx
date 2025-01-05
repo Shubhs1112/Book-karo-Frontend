@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // If you're using React Router for navigation
 import { useSelector, useDispatch } from 'react-redux';
-import { logout } from '../redux/authSlice'; // Import the logout action
-import '../resources/LandingPage.css'; // Import the external CSS file for landing page
+import { logout } from '../../redux/authSlice'; // Import the logout action
+import '../../resources/LandingPage.css';
 
 const LandingPage = () => {
     const dispatch = useDispatch();
@@ -60,7 +60,7 @@ const LandingPage = () => {
             </nav>
 
             <header className="landing-header">
-                <h1>Welcome to Movie Booking</h1>
+                <h1>Welcome to Book Karo</h1>
                 <p>Your one-stop platform to book your favorite movies</p>
             </header>
 
